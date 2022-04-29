@@ -37,6 +37,7 @@ def all_users():
     users = crud.get_users()
     return render_template("all_users.html",users=users)
 
+#TODO for some reason would not route to USERS, so changed to user. unsure what is causing this
 @app.route('/user/<user_id>')
 def show_users(user_id):
     """Show details on a particular user"""
